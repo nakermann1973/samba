@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 NUM_OF_SERVICES=2
 [ -z ${AVAHI_DISABLE+x} ] && [ -f "/external/avahi/not-mounted" ] && NUM_OF_SERVICES=$(expr $NUM_OF_SERVICES + 1)
 [ -z ${WSDD2_DISABLE+x} ] && NUM_OF_SERVICES=$(expr $NUM_OF_SERVICES + 1)
