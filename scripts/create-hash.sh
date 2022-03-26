@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # replace original smb config
 grep '# This is the main Samba configuration file.' /etc/samba/smb.conf 2>/dev/null >/dev/null && cp /container/config/samba/smb.conf /etc/samba/smb.conf
